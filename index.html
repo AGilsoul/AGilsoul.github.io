@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseph Gilsoul | Software &amp; Applied Math</title>
+<meta name="description" content="Portfolio of Joseph Gilsoul: applied mathematics, software engineering, and research.">
+<style>
+:root{--bg:#fafaf8;--card:#fff;--text:#1d1f23;--muted:#5c6470;--accent:#1f5fd1;--line:#e4e4df;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#1a1d21;--text:#e8eaed;--muted:#9aa3ae;--accent:#6ea2ff;--line:#2a2e34;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 24px}
+h1{font-size:2.3rem;margin:0 0 6px;letter-spacing:-.02em}
+.tag{color:var(--muted);margin:0 0 18px;font-size:1.1rem}
+nav a,.links a{color:var(--accent);text-decoration:none;margin-right:16px;font-weight:500}
+nav a:hover,.links a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);z-index:5}
+section{padding:36px 0 8px}
+h2{font-size:1.3rem;margin:0 0 16px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+.card h3{margin:0 0 2px;font-size:1.05rem}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+.card p{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{font-size:.82rem;padding:2px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
+.card a{color:var(--accent);text-decoration:none;font-weight:500}
+.card a:hover{text-decoration:underline}
+footer{padding:40px 0 60px;color:var(--muted);font-size:.9rem}
+.btn{display:inline-block;background:var(--accent);color:#fff!important;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:6px}
+@media(max-width:520px){h1{font-size:1.8rem}header{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Joseph Gilsoul</h1>
+  <p class="tag">Applied mathematics student and software developer, University of Utah. Graduating December 2026 and looking for roles in the Salt Lake City area.</p>
+  <div class="links">
+    <!-- TODO: replace the LinkedIn and email placeholders -->
+    <a href="https://github.com/AGilsoul">GitHub</a>
+    <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+    <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+    <a class="btn" href="resume.pdf">Download résumé</a>
+  </div>
+</header>
+
+<nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#skills">Skills</a></nav>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Convolutional neural network from scratch</h3>
+    <div class="meta">C++ · Machine learning</div>
+    <p>A convolutional neural network class written from scratch in C++, using gradient calculus from my coursework. Identifies handwritten digits with 97% accuracy.</p>
+    <div class="chips"><span class="chip">C++</span><span class="chip">Machine learning</span><span class="chip">Calculus</span></div>
+    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/C%2B%2B">View on GitHub →</a></p>
+  </div>
+  <div class="card">
+    <h3>Image edge extraction</h3>
+    <div class="meta">Python · CUDA</div>
+    <p>Applies vertical and horizontal filters to images to extract edges. Uses a C++/CUDA dynamic library I wrote to speed up processing.</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">CUDA</span></div>
+    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">View on GitHub →</a></p>
+  </div>
+  <div class="card">
+    <h3>Discrete Fourier Transform</h3>
+    <div class="meta">C++ and Python</div>
+    <p>Takes discrete signals and returns their frequency spectrum. Two versions: a C++ implementation and a Python one that displays the spectrum graphically.</p>
+    <div class="chips"><span class="chip">C++</span><span class="chip">Python</span><span class="chip">Signal processing</span></div>
+    <p><a href="https://github.com/AGilsoul/DiscreteFourierTransform">View on GitHub →</a></p>
+  </div>
+  <div class="card">
+    <h3>ODE and PDE solvers</h3>
+    <div class="meta">Python · Numerical methods</div>
+    <p>One program solves ODEs with RK45; another solves the advection and wave equations and plots the results.</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">RK45</span><span class="chip">PDEs</span></div>
+    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">View on GitHub →</a></p>
+  </div>
+  <div class="card">
+    <h3>NTER data analysis</h3>
+    <div class="meta">C++ · Python · Research data analysis</div>
+    <p>Code for analyzing temporal paths in flame simulation data, with CPU and GPU-oriented variants and Python tooling for post-processing. <!-- TODO: confirm and refine this description --></p>
+    <div class="chips"><span class="chip">C++</span><span class="chip">Python</span><span class="chip">Data analysis</span></div>
+    <p><a href="https://github.com/AGilsoul/NTER">View on GitHub →</a></p>
+  </div>
+  <p><a href="https://github.com/AGilsoul/My-Projects" style="color:var(--accent)">More on GitHub →</a></p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Software Engineer Intern, Optisys</h3>
+    <div class="meta">January 2025 – December 2025</div>
+    <p>Built Python tooling that automates mechanical and RF engineering design processes.</p>
+  </div>
+  <div class="card">
+    <h3>Medical Assistant, FFP Management LLC</h3>
+    <div class="meta">Also hold NREMT EMT-B and AHA BLS Provider certifications</div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research &amp; Education</h2>
+  <div class="card">
+    <h3>Stochastic modeling of antibiotic-resistant bacteria</h3>
+    <div class="meta">University of Utah Math REU</div>
+    <p>Co-authored “Mitigating Antibiotic Resistance From Missed Doses,” published in the <em>Journal of Pharmacokinetics &amp; Pharmacodynamics</em>. <!-- TODO: add DOI link --></p>
+  </div>
+  <div class="card">
+    <h3>Turbulent hydrogen flame CFD modeling</h3>
+    <div class="meta">University of Utah SPUR/UROP</div>
+  </div>
+  <div class="card">
+    <h3>B.S. Applied Mathematics, University of Utah</h3>
+    <div class="meta">Minor in Computer Science · Expected December 2026 · GPA 3.9</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="chips">
+    <span class="chip">C++</span><span class="chip">C#</span><span class="chip">Java</span><span class="chip">Python</span>
+    <span class="chip">SQL</span><span class="chip">F Prime</span><span class="chip">CAN</span><span class="chip">CFD</span>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Joseph Gilsoul</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
