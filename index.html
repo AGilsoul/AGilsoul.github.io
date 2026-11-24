@@ -3,134 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joseph Gilsoul | Software &amp; Applied Math</title>
-<meta name="description" content="Portfolio of Joseph Gilsoul: applied mathematics, software engineering, and research.">
-<style>
-:root{--bg:#fafaf8;--card:#fff;--text:#1d1f23;--muted:#5c6470;--accent:#1f5fd1;--line:#e4e4df;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#1a1d21;--text:#e8eaed;--muted:#9aa3ae;--accent:#6ea2ff;--line:#2a2e34;color-scheme:dark}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px}
-header{padding:56px 0 24px}
-h1{font-size:2.3rem;margin:0 0 6px;letter-spacing:-.02em}
-.tag{color:var(--muted);margin:0 0 18px;font-size:1.1rem}
-nav a,.links a{color:var(--accent);text-decoration:none;margin-right:16px;font-weight:500}
-nav a:hover,.links a:hover{text-decoration:underline}
-nav{position:sticky;top:0;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);z-index:5}
-section{padding:36px 0 8px}
-h2{font-size:1.3rem;margin:0 0 16px;border-bottom:1px solid var(--line);padding-bottom:8px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:16px}
-.card h3{margin:0 0 2px;font-size:1.05rem}
-.meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
-.card p{margin:6px 0}
-.card ul{margin:6px 0;padding-left:20px}
-.card li{margin:4px 0}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.chip{font-size:.82rem;padding:2px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
-.card a{color:var(--accent);text-decoration:none;font-weight:500}
-.card a:hover{text-decoration:underline}
-footer{padding:40px 0 60px;color:var(--muted);font-size:.9rem}
-.btn{display:inline-block;background:var(--accent);color:#fff!important;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:6px}
-@media(max-width:520px){h1{font-size:1.8rem}header{padding-top:36px}}
-</style>
+<title>Joseph Gilsoul</title>
+<meta name="description" content="Joseph Gilsoul: applied mathematics, software engineering, and research.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<main>
+
 <header>
-  <h1>Joseph Gilsoul</h1>
-  <p class="tag">Applied mathematics student and software developer, University of Utah. Graduating December 2026 and looking for roles in the Salt Lake City area.</p>
-  <div class="links">
-    <!-- TODO: replace the LinkedIn and email placeholders -->
-    <a href="https://github.com/AGilsoul">GitHub</a>
-    <a href="https://www.linkedin.com/in/joseph-gilsoul">LinkedIn</a>
-    <a href="mailto:agilsoulphysics@gmail.com">Email</a>
-    <a class="btn" href="Joseph_Gilsoul_Resume.pdf">Download résumé</a>
+  <div class="top">
+    <div class="who">
+      <h1>Joseph Gilsoul</h1>
+      <figure class="wave" aria-hidden="true">
+        <svg viewBox="0 0 680 60" preserveAspectRatio="none"><path id="wave-path"/></svg>
+        <figcaption id="wave-label">square wave, 1 Fourier term</figcaption>
+      </figure>
+      <p class="intro">I study applied mathematics at the University of Utah and write software, mostly numerical and geometry code. I graduate in December 2026 and am looking for work in the Salt Lake City area.</p>
+    </div>
+    <img class="portrait" src="alex-portrait.jpg" width="520" height="520" alt="Joseph Gilsoul hiking, with snow-capped mountains behind him">
   </div>
+  <p class="contact">
+    <a href="https://github.com/AGilsoul">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/joseph-gilsoul">LinkedIn</a> ·
+    <a href="mailto:agilsoulphysics@gmail.com">agilsoulphysics@gmail.com</a> ·
+    <a href="Joseph_Gilsoul_Resume.pdf">Résumé (PDF)</a>
+  </p>
 </header>
 
-<nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#skills">Skills</a></nav>
+<h2>Experience</h2>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Convolutional neural network from scratch</h3>
-    <div class="meta">C++ · Machine learning</div>
-    <p>A convolutional neural network class written from scratch in C++, using gradient calculus from my coursework. Identifies handwritten digits with 97% accuracy.</p>
-    <div class="chips"><span class="chip">C++</span><span class="chip">Machine learning</span><span class="chip">Calculus</span></div>
-    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/C%2B%2B">View on GitHub →</a></p>
+<div class="entry">
+  <div class="row">
+    <h3>Optisys, Software Engineer Intern</h3>
+    <span class="when">Jan–Dec 2025; Nov 2026–present</span>
   </div>
-  <div class="card">
-    <h3>Image edge extraction</h3>
-    <div class="meta">Python · CUDA</div>
-    <p>Applies vertical and horizontal filters to images to extract edges. Uses a C++/CUDA dynamic library I wrote to speed up processing.</p>
-    <div class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">CUDA</span></div>
-    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">View on GitHub →</a></p>
-  </div>
-  <div class="card">
-    <h3>Discrete Fourier Transform</h3>
-    <div class="meta">C++ and Python</div>
-    <p>Takes discrete signals and returns their frequency spectrum. Two versions: a C++ implementation and a Python one that displays the spectrum graphically.</p>
-    <div class="chips"><span class="chip">C++</span><span class="chip">Python</span><span class="chip">Signal processing</span></div>
-    <p><a href="https://github.com/AGilsoul/DiscreteFourierTransform">View on GitHub →</a></p>
-  </div>
-  <div class="card">
-    <h3>ODE and PDE solvers</h3>
-    <div class="meta">Python · Numerical methods</div>
-    <p>One program solves ODEs with RK45; another solves the advection and wave equations and plots the results.</p>
-    <div class="chips"><span class="chip">Python</span><span class="chip">RK45</span><span class="chip">PDEs</span></div>
-    <p><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">View on GitHub →</a></p>
-  </div>
-  <p><a href="https://github.com/AGilsoul/My-Projects" style="color:var(--accent)">More on GitHub →</a></p>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Software Engineer Intern, Optisys</h3>
-    <div class="meta">Salt Lake City, UT · January 2025 – December 2025, November 2026 – present</div>
-    <ul>
-      <li>Cut full-part slicing time for metal 3D printing (laser powder bed fusion) from ~4 hours to 5 minutes (~48x) by profiling and re-architecting the company's Dyndrite-based toolpath generator.</li>
-      <li>Rewrote core geometry-processing algorithms, reducing complexity from O(N²) to O(N) and O(N log n) for 130x and 62x speedups, with timing instrumentation to measure every change.</li>
-      <li>Developed a new contour-offset method that eliminated jagged edges on printed parts, and found a dropped-toolpath bug by comparing optimized and baseline output.</li>
-      <li>Restructured a 1,300-line script into a modular, installable Python package with a command-line interface, so engineers can slice parts without editing code.</li>
-      <li>Added .3mf file support and specified laser-parameter test plates for tuning support settings.</li>
-      <li>Sole software engineer for six months: automated mechanical and RF design workflows in Siemens NX and Ansys HFSS with Python, and set up and managed the team's Git server.</li>
-    </ul>
-    <div class="chips"><span class="chip">Python</span><span class="chip">Dyndrite</span><span class="chip">Profiling &amp; optimization</span><span class="chip">Siemens NX</span><span class="chip">Ansys HFSS</span><span class="chip">Git</span></div>
-  </div>
-  <div class="card">
-    <h3>Medical Assistant, FFP Management LLC</h3>
-    <div class="meta">Also hold NREMT EMT-B and AHA BLS Provider certifications</div>
-  </div>
-</section>
-
-<section id="research">
-  <h2>Research &amp; Education</h2>
-  <div class="card">
-    <h3>Stochastic modeling of antibiotic-resistant bacteria</h3>
-    <div class="meta">University of Utah Math REU</div>
-    <p>First author of “Mitigating Antibiotic Resistance From Missed Doses,” <em>Journal of Pharmacokinetics &amp; Pharmacodynamics</em> (2026). Modeled resistance with stochastic differential equations in Python (Gillespie, tau leaping). <!-- TODO: add DOI link --></p>
-  </div>
-  <div class="card">
-    <h3>Turbulent hydrogen flame CFD modeling</h3>
-    <div class="meta">University of Utah SPUR/UROP</div>
-  </div>
-  <div class="card">
-    <h3>B.S. Applied Mathematics, University of Utah</h3>
-    <div class="meta">Minor in Computer Science · Expected December 2026 · GPA 3.9</div>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="chips">
-    <span class="chip">C++</span><span class="chip">C#</span><span class="chip">Java</span><span class="chip">Python</span>
-    <span class="chip">SQL</span><span class="chip">F Prime</span><span class="chip">CAN</span><span class="chip">CFD</span>
-  </div>
-</section>
-
-<footer>© <span id="y"></span> Joseph Gilsoul</footer>
+  <p class="sub">Salt Lake City, UT</p>
+  <ul>
+    <li>Cut full-part slicing time for metal 3D printing (laser powder bed fusion) from about 4 hours to 5 minutes by profiling and re-architecting the company's Dyndrite-based toolpath generator.</li>
+    <li>Rewrote core geometry-processing algorithms from O(N²) to O(N) and O(N log N), giving 130x and 62x speedups, with timing instrumentation to measure every change.</li>
+    <li>Developed a new contour-offset method that eliminated jagged edges on printed parts, and found a dropped-toolpath bug by comparing optimized and baseline output.</li>
+    <li>Restructured a 1,300-line script into an installable Python package with a command-line interface, so engineers can slice parts without editing code.</li>
+    <li>Added .3mf file support and specified laser-parameter test plates for tuning support settings.</li>
+    <li>Was the only software engineer for six months: automated mechanical and RF design workflows in Siemens NX and Ansys HFSS with Python, and set up and ran the team's Git server.</li>
+  </ul>
 </div>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+
+<div class="entry">
+  <h3>FFP Management LLC, Medical Assistant</h3>
+  <p class="sub">NREMT EMT-B and AHA BLS Provider certified</p>
+</div>
+
+<h2>Research</h2>
+
+<div class="entry">
+  <h3>Stochastic modeling of antibiotic-resistant bacteria</h3>
+  <p class="sub">University of Utah Math REU</p>
+  <p>First author, “Mitigating Antibiotic Resistance From Missed Doses,” <em>Journal of Pharmacokinetics &amp; Pharmacodynamics</em> (2026). Modeled resistance with stochastic differential equations in Python using Gillespie and tau-leaping methods.</p>
+</div>
+
+<div class="entry">
+  <h3>Modelling and simulation of turbulent premixed hydrogen flames</h3>
+  <p class="sub">University of Utah SPUR/UROP</p>
+  <p>Wrote code to analyze data generated from direct numerical simulation of hydrogen flames.</p>
+</div>
+
+<h2>Projects</h2>
+
+<ul class="projects">
+  <li><a href="https://github.com/AGilsoul/My-Projects/tree/main/C%2B%2B">Convolutional neural network from scratch</a> <span class="lang">(C++)</span><br>
+    Written without ML libraries, with the gradients worked out by hand. Recognizes handwritten digits with 97% accuracy.</li>
+  <li><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">Image edge extraction</a> <span class="lang">(Python, C++/CUDA)</span><br>
+    Applies vertical and horizontal filters to find edges, with the heavy lifting done in a CUDA library I wrote.</li>
+  <li><a href="https://github.com/AGilsoul/DiscreteFourierTransform">Discrete Fourier transform</a> <span class="lang">(C++, Python)</span><br>
+    Computes the frequency spectrum of a discrete signal; the Python version plots it.</li>
+  <li><a href="https://github.com/AGilsoul/My-Projects/tree/main/Python">ODE and PDE solvers</a> <span class="lang">(Python)</span><br>
+    An RK45 ODE solver, plus solvers for the advection and wave equations that plot their results.</li>
+</ul>
+<p>Other things are on <a href="https://github.com/AGilsoul/My-Projects">GitHub</a>.</p>
+
+<h2>Education</h2>
+
+<div class="entry">
+  <div class="row">
+    <h3>University of Utah</h3>
+    <span class="when">Expected December 2026</span>
+  </div>
+  <p>B.S. Applied Mathematics, minor in Computer Science. GPA 3.9.</p>
+</div>
+
+<h2>Skills</h2>
+<p>C++, Python, C#, Java, SQL. Also F Prime, CAN bus, and CFD.</p>
+
+<footer>Joseph Gilsoul · Salt Lake City, Utah</footer>
+
+</main>
+<script>
+// Square wave built from its Fourier series. Moving the cursor across the
+// page adds or removes terms; the wave drifts slowly unless reduced motion is on.
+(function () {
+  var path = document.getElementById('wave-path');
+  var label = document.getElementById('wave-label');
+  var W = 680, H = 60, MID = H / 2, AMP = 20, MAX_TERMS = 30;
+  var terms = 1, target = 1, phase = 0;
+  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function draw() {
+    var d = '';
+    for (var x = 0; x <= W; x += 2) {
+      var t = (x / W) * 4 * Math.PI + phase, y = 0;
+      for (var k = 0; k < terms; k++) {
+        var n = 2 * k + 1;
+        y += Math.sin(n * t) / n;
+      }
+      y = MID - AMP * (4 / Math.PI) * y;
+      d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(1);
+    }
+    path.setAttribute('d', d);
+    label.textContent = 'square wave, ' + terms + ' Fourier term' + (terms > 1 ? 's' : '');
+  }
+
+  document.addEventListener('mousemove', function (e) {
+    target = 1 + Math.round((e.clientX / window.innerWidth) * (MAX_TERMS - 1));
+    if (still) { terms = target; draw(); }
+  });
+
+  if (still) { draw(); return; }
+  var frame = 0;
+  (function tick() {
+    phase += 0.004;
+    if (terms !== target && ++frame % 3 === 0) terms += terms < target ? 1 : -1;
+    draw();
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
 </body>
 </html>
